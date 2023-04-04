@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board {
+    width:50%;
+    height: 500px;
+    border: 1px solid;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.cano {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -160px;
+    animation: animacao-cano 5s infinite linear;
+}
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+}
+
+@keyframes animacao-cano {
+    from {
+       right:  0;
+    }
+
+    to {
+       right: 100%
+    }  
+}
