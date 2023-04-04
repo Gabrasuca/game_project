@@ -16,12 +16,15 @@
     bottom: 0;
     width: 80px;
     right: -160px;
-    animation: animacao-cano 5s infinite linear;
+    animation: animacao-cano 2s infinite linear;
 }
 .mario {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 120px;
+}
+.pulo {
+    animation: mario-pulo 500ms ease-out;
 }
 
 @keyframes animacao-cano {
@@ -32,4 +35,21 @@
     to {
        right: 100%
     }  
+}
+@keyframes mario-pulo {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 160px;
+    }
+    50%{
+        bottom: 160px;
+    }
+    65% {
+        bottom: 160px;
+    }
+    100% {
+        bottom: 0px;
+    }
 }
