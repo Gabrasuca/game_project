@@ -10,6 +10,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-image: url("./images/download.png");
+    background-repeat: no-repeat;
+    
 }
 .cano {
     position: absolute;
@@ -24,7 +27,7 @@
     width: 120px;
 }
 .pulo {
-    animation: mario-pulo 500ms ease-out;
+    animation: pulo 500ms ease-out;
 }
 
 @keyframes animacao-cano {
@@ -36,7 +39,7 @@
        right: 100%
     }  
 }
-@keyframes mario-pulo {
+@keyframes pulo {
     0% {
         bottom: 0;
     }
