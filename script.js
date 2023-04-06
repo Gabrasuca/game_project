@@ -9,7 +9,7 @@ const pulo = () => {
     }, 500)
 }
 
-const sePerdeu = setInterval(() => {
+let sePerdeu = setInterval(() => {
 
     const posicaoCano = cano.offsetLeft;
     const posicaoMario = +window.getComputedStyle(mario).bottom.replace(`px`, ``);
@@ -28,7 +28,7 @@ const sePerdeu = setInterval(() => {
 
         clearInterval(sePerdeu)
     }
-}, 10)
+}, 50)
 
 
 document.addEventListener("keydown", pulo)
